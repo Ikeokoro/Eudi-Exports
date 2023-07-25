@@ -9,8 +9,11 @@
   <body>
     <div class="container">
       <form action="" method="post" class="form">
-        <img class="logo" src="Images/237.png" alt="" />
-        <h1>Sign into your Eudi Account</h1>
+        <div class="head">
+          <img class="logo" src="Images/237.png" alt="" />
+          <h1>Sign into your Eudi Account</h1>
+        </div>
+
         <div class="content">
           <label for="email" id="email">Email</label>
           <input type="email" name="" id="name" placeholder="Enter email" />
@@ -25,9 +28,15 @@
           />
         </div>
         <div class="prompts">
-          <input type="checkbox" name="" id="checkbox" />
-          <p id="remember">Remember me</p>
-          <p>Forgot password</p>
+          <div class="p-content">
+            <div id="rem-con">
+              <input type="checkbox" name="" id="checkbox" />
+              <p id="remember">Remember me</p>
+            </div>
+            <div class="f-container"> 
+              <p id="forgot">Forgot password</p>
+            </div>
+          </div>
         </div>
         <div>
           <input type="submit" value="Sign in" id="submitBtn" />
